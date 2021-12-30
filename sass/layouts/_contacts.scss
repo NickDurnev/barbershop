@@ -6,16 +6,16 @@
   background-position: center;
   background-repeat: no-repeat;
   max-width: 1280px;
-  background-image: url(/images/contactsbcg-480.png);
+  background-image: url(./images/contactsbcg-480.png);
 
   @include viewport($range: retina) {
-    background-image: url(/images/contactsbcg-480x2.png);
+    background-image: url(./images/contactsbcg-480x2.png);
   }
 
   @include viewport($range: tablet) {
-    background-image: url(/images/contactsbcg-768.png);
+    background-image: url(./images/contactsbcg-768.png);
     @include viewport($range: retina) {
-      background-image: url(/images/contactsbcg-768x2.png);
+      background-image: url(./images/contactsbcg-768x2.png);
     }
   }
 }
