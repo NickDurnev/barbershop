@@ -1,0 +1,25 @@
+.button {
+  min-width: 160px;
+  min-height: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 250ms var(--animations-function-time);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+
+  &--secondary-text {
+    color: var(--secondary-title-color);
+  }
+}

@@ -1,0 +1,61 @@
+.about-us__section-title {
+  @include section-title-mrb(20px);
+}
+
+.about-us__second-title {
+  @include second-title-mrb(20px);
+}
+
+.about-us__description {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.62;
+}
+.about-us__text {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+@include viewport($range: tablet) {
+  .about-us__container {
+    display: flex;
+  }
+}
+@include viewport($range: mobile-only) {
+  .about-us__image-list {
+    display: none;
+  }
+}
+@include viewport($range: tablet-only) {
+  .about-us__image-list {
+    margin-right: 30px;
+  }
+
+  .about-us__image-item {
+    width: 330px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@include viewport($range: desktop) {
+  .about-us__image-list {
+    display: flex;
+    margin-right: 64px;
+  }
+
+  .about-us__image-item {
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  .about-us__text-block {
+    flex-grow: 1;
+    width: 500px;
+  }
+}

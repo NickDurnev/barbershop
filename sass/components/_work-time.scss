@@ -1,0 +1,20 @@
+.work-time {
+  @include viewport($range: desktop) {
+    width: 370px;
+  }
+}
+
+.work-time__section-title {
+  @include section-title-mrb(20px);
+  color: var(--secondary-title-color);
+
+  &::before {
+    background-color: rgba(157, 164, 189, 0.4);
+  }
+}
+.work-time__text {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.66;
+  color: var(--secondary-text-color);
+}

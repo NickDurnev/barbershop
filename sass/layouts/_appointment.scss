@@ -1,0 +1,12 @@
+.appointment {
+  background-color: var(--foot-background);
+}
+.appointment__second-title {
+  @include main-title-mrb(44px, 42px);
+  color: var(--secondary-title-color);
+  text-align: center;
+
+  @include viewport($range: tablet) {
+    text-align: start;
+  }
+}

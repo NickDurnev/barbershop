@@ -1,0 +1,33 @@
+.contacts__tel {
+  @include viewport($range: mobile-only) {
+    margin-bottom: 24px;
+  }
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.contacts__link {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  transition: color 250ms var(--animations-function-time);
+}
+
+@include viewport($range: tablet) {
+  .contacts__tel {
+    font-size: 12px;
+  }
+  .contacts__link {
+    color: var(--secondary-title-color);
+  }
+}
+
+@include viewport($range: desktop) {
+  .contacts__tel {
+    margin-right: 40px;
+  }
+}

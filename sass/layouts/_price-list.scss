@@ -1,0 +1,105 @@
+.price-list {
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(/images/pricelistbcg-480.png);
+
+  background-color: #000000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1280px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 1px solid #000000;
+
+  @include viewport($range: retina) {
+    background-image: url(/images/pricelistbcg-480x2.png);
+  }
+
+  @include viewport($range: tablet) {
+    background-image: url(/images/pricelistbcg-768.png);
+    @include viewport($range: retina) {
+      background-image: url(/images/pricelistbcg-768x2.png);
+    }
+  }
+
+  @include viewport($range: desktop) {
+    background-image: url(/images/pricelistbcg-1280.png);
+    @include viewport($range: retina) {
+      background-image: url(/images/pricelistbcg-1280x2.png);
+    }
+  }
+}
+
+.price-list__section-title {
+  @include section-title-mrb(20px);
+}
+
+.price-list__main-title {
+  @include main-title-mrb(44px, 42px);
+  color: var(--primary-background);
+}
+
+.price-list__list {
+  margin-bottom: 50px;
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+  @include viewport($range: notDesktop) {
+    padding: 30px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  @include viewport($range: desktop) {
+    display: flex;
+  }
+}
+
+.price-list__block {
+  @include viewport($range: notDesktop) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  @include viewport($range: desktop) {
+    padding: 30px;
+    width: 585px;
+  }
+}
+
+.price-list__item {
+  display: flex;
+  align-items: baseline;
+  font-size: 14px;
+  line-height: 2.14;
+  color: var(--secondary-text-color);
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.price-list__item-border {
+  display: block;
+  margin: 0 6px;
+  flex-grow: 1;
+  height: 1px;
+  background: rgba(157, 164, 189, 0.12);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.price-list__button {
+  display: flex;
+  justify-content: center;
+}
+
+@include viewport($range: tablet-only) {
+  .statistic__text-block {
+    padding-right: 189px;
+  }
+
+  .statistic__list {
+    padding-left: 240px;
+  }
+}

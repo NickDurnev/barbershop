@@ -1,0 +1,25 @@
+@include viewport($range: mobile-only) {
+  .side-bar__social-links {
+    display: none;
+  }
+}
+@include viewport($range: tablet) {
+  .side-bar {
+    margin-right: 28px;
+    padding-top: 40px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 85px;
+    height: 680px;
+    background-color: var(--primary-background);
+  }
+  .side-bar__social-links {
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+  }
+}

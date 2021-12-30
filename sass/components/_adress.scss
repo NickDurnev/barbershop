@@ -1,0 +1,43 @@
+.adress-block {
+  @include viewport($range: tablet) {
+    width: 50%;
+  }
+  @include viewport($range: desktop) {
+    width: 270px;
+  }
+}
+
+.adress__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.adress__link {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.66;
+  color: var(--secondary-text-color);
+
+  &--underline {
+    text-decoration: underline;
+  }
+  @include viewport($range: desktop) {
+    width: 270px;
+  }
+}
+
+.adress__icon {
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+
+  @include viewport($range: desktop) {
+    margin-right: 20px;
+    &:first-child {
+      margin-right: 25px;
+    }
+  }
+}

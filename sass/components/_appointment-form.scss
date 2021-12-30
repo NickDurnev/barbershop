@@ -1,0 +1,70 @@
+.appointment-form__label {
+  display: block;
+  width: 100%;
+  @include viewport($range: mobile-only) {
+    margin-bottom: 44px;
+  }
+  @include viewport($range: desktop) {
+    width: 560px;
+  }
+}
+
+@include viewport($range: tablet) {
+  .appointment-form__label-block {
+    display: flex;
+    margin-bottom: 44px;
+  }
+
+  .appointment-form__label--resize {
+    width: 330px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+@include viewport($range: desktop) {
+  .appointment-form__label--resize {
+    width: 270px;
+    &:last-child {
+      width: 260px;
+    }
+  }
+}
+
+.appointment-form__item {
+  width: inherit;
+  padding-bottom: 8px;
+  cursor: pointer;
+  resize: none;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  border-color: rgba(157, 164, 189, 0.4);
+  color: rgba(157, 164, 189, 0.4);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: var(--foot-background);
+  outline: none;
+  transition: border-color 250ms var(--animations-function-time);
+
+  &:focus {
+    color: var(--secondary-title-color);
+    border-color: var(--primary-background);
+  }
+}
+
+.appointment-form__button {
+  display: flex;
+  justify-content: center;
+  @include viewport($range: tablet) {
+    margin-top: 44px;
+    justify-content: flex-start;
+  }
+}

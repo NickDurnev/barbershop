@@ -1,0 +1,79 @@
+@mixin viewport($range) {
+  $mobile-wp: 480px;
+  $tablet-wp: 768px;
+  $desktop-wp: 1280px;
+
+  @if $range == mobile-only {
+    @media (max-width: $tablet-wp - 0.02) {
+      @content;
+    }
+  } @else if $range == mobile {
+    @media (min-width: $mobile-wp) {
+      @content;
+    }
+  } @else if $range == tablet-only {
+    @media (min-width:  $tablet-wp) and (max-width: #{$desktop-wp - 0.02}) {
+      @content;
+    }
+  } @else if $range == tablet {
+    @media (min-width: $tablet-wp) {
+      @content;
+    }
+  } @else if $range == desktop {
+    @media (min-width: $desktop-wp) {
+      @content;
+    }
+  } @else if $range == notDesktop {
+    @media (max-width: #{$desktop-wp - 0.02}) {
+      @content;
+    }
+  } @else if $range == retina {
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-moz-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      @content;
+    }
+  }
+}
+// Section-title
+@mixin section-title-mrb($value) {
+  display: flex;
+  align-items: center;
+  margin-bottom: ($value);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  &::before {
+    margin-right: 20px;
+    content: '';
+
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}
+// Main title
+@mixin main-title-mrb($value, $fs) {
+  margin-bottom: ($value);
+
+  font-family: 'Raleway', sans-serif;
+  font-size: ($fs);
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+// Second-title
+@mixin second-title-mrb($value) {
+  margin-bottom: ($value);
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #303030;
+}

@@ -1,0 +1,37 @@
+.masters {
+  background-color: var(--secondary-background);
+}
+
+.masters__list {
+  @include viewport($range: tablet-only) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  @include viewport($range: desktop) {
+    display: flex;
+    margin: -15px;
+  }
+}
+
+.masters__section-title {
+  @include section-title-mrb(20px);
+  @include viewport($range: tablet-only) {
+    padding-left: 120px;
+  }
+}
+
+.masters__second-title {
+  @include main-title-mrb(44px, 42px);
+  @include viewport($range: tablet-only) {
+    padding-left: 120px;
+  }
+}
+
+.masters__card {
+  &:not(:last-child) {
+    margin-bottom: 64px;
+  }
+  @include viewport($range: desktop) {
+    margin: 15px;
+  }
+}

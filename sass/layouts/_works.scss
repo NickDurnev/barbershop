@@ -1,0 +1,33 @@
+.work-time {
+  @include viewport($range: tablet) {
+    width: 50%;
+  }
+}
+
+.works__section-title {
+  @include section-title-mrb(44px);
+}
+
+.works__list {
+  @include viewport($range: tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.works__item {
+  @include viewport($range: mobile-only) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include viewport($range: tablet) {
+    width: 330px;
+    margin: 15px;
+  }
+  @include viewport($range: desktop) {
+    width: 270px;
+  }
+}

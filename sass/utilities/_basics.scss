@@ -1,0 +1,51 @@
+body {
+  background-color: var(--primary-background);
+
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: var(--primary-title-color);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 84px 0;
+
+  @include viewport($range: tablet) {
+    padding: 100px 0;
+  }
+
+  @include viewport($range: desktop) {
+    padding: 130px 0;
+  }
+}
+
+.section-title--secondary-color {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.description--secondary-color {
+  color: var(--secondary-text-color);
+}

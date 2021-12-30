@@ -1,0 +1,32 @@
+@include viewport($range: desktop) {
+  .appointment-contacts {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 1280px;
+  }
+
+  .appointment {
+    margin: 0;
+  }
+
+  .appointment__container {
+    width: 655px;
+    padding-left: 56px;
+    padding-right: 40px;
+    margin: 0;
+  }
+
+  .appointment-form {
+    width: 560px;
+  }
+
+  .contacts {
+    margin: 0;
+  }
+  .contacts__container {
+    width: 625px;
+    padding-left: 100px;
+    margin: 0;
+  }
+}

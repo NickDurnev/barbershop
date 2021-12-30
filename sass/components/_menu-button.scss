@@ -1,0 +1,30 @@
+@include viewport($range: mobile-only) {
+  .menu-button {
+    position: absolute;
+    z-index: 2;
+    padding: 0;
+    top: 48px;
+    right: 2px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .menu-button .icon-cross {
+    display: none;
+  }
+
+  .menu-button.is-open .icon-cross {
+    display: block;
+  }
+
+  .menu-button.is-open .icon-menu {
+    display: none;
+  }
+}
+
+@include viewport($range: tablet) {
+  .menu-button {
+    display: none;
+  }
+}

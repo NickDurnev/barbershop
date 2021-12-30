@@ -1,0 +1,17 @@
+.logo {
+  color: var(--secondary-title-color);
+
+  @include viewport($range: tablet) {
+    position: absolute;
+    top: 32px;
+    left: 10px;
+    color: #303030;
+    height: 56px;
+  }
+}
+
+.logo__icon {
+  width: 69px;
+  height: 56px;
+  fill: currentColor;
+}

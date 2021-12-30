@@ -1,0 +1,41 @@
+.statistic__section-title {
+  @include section-title-mrb(20px);
+}
+.statistic__main-title {
+  @include main-title-mrb(20px, 42px);
+}
+.statistic__description {
+  font-size: 18px;
+  line-height: 1.66;
+  margin-bottom: 44px;
+}
+
+.statistic__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.statistic__item {
+  &:nth-child(odd) {
+    margin-right: 30px;
+  }
+  &:nth-child(even) {
+    margin-top: 30px;
+  }
+}
+
+@include viewport($range: desktop) {
+  .statistic__container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .statistic__list {
+    width: 470px;
+    padding-left: 100px;
+    margin-right: 130px;
+  }
+  .statistic__text-block {
+    width: 570px;
+    padding-right: 70px;
+  }
+}
