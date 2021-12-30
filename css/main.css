@@ -602,7 +602,7 @@ section {
 .price-list {
   margin-left: auto;
   margin-right: auto;
-  background-image: url(/images/pricelistbcg-480.png);
+  background-image: url(../images/pricelistbcg-480.png);
   background-color: #000000;
   background-size: cover;
   background-position: center;
@@ -615,31 +615,31 @@ section {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .price-list {
-    background-image: url(/images/pricelistbcg-480x2.png);
+    background-image: url(../images/pricelistbcg-480x2.png);
   }
 }
 
 @media (min-width: 768px) {
   .price-list {
-    background-image: url(/images/pricelistbcg-768.png);
+    background-image: url(../images/pricelistbcg-768.png);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .price-list {
-    background-image: url(/images/pricelistbcg-768x2.png);
+    background-image: url(../images/pricelistbcg-768x2.png);
   }
 }
 
 @media (min-width: 1280px) {
   .price-list {
-    background-image: url(/images/pricelistbcg-1280.png);
+    background-image: url(../images/pricelistbcg-1280.png);
   }
 }
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .price-list {
-    background-image: url(/images/pricelistbcg-1280x2.png);
+    background-image: url(../images/pricelistbcg-1280x2.png);
   }
 }
 
@@ -1179,24 +1179,24 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   max-width: 1280px;
-  background-image: url(./images/contactsbcg-480.png);
+  background-image: url(../images/contactsbcg-480.png);
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(./images/contactsbcg-480x2.png);
+    background-image: url(../images/contactsbcg-480x2.png);
   }
 }
 
 @media (min-width: 768px) {
   .contacts {
-    background-image: url(./images/contactsbcg-768.png);
+    background-image: url(../images/contactsbcg-768.png);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(./images/contactsbcg-768x2.png);
+    background-image: url(../images/contactsbcg-768x2.png);
   }
 }
 

@@ -1,7 +1,7 @@
 .price-list {
   margin-left: auto;
   margin-right: auto;
-  background-image: url(/images/pricelistbcg-480.png);
+  background-image: url(../images/pricelistbcg-480.png);
 
   background-color: #000000;
   background-size: cover;
@@ -12,20 +12,20 @@
   border: 1px solid #000000;
 
   @include viewport($range: retina) {
-    background-image: url(/images/pricelistbcg-480x2.png);
+    background-image: url(../images/pricelistbcg-480x2.png);
   }
 
   @include viewport($range: tablet) {
-    background-image: url(/images/pricelistbcg-768.png);
+    background-image: url(../images/pricelistbcg-768.png);
     @include viewport($range: retina) {
-      background-image: url(/images/pricelistbcg-768x2.png);
+      background-image: url(../images/pricelistbcg-768x2.png);
     }
   }
 
   @include viewport($range: desktop) {
-    background-image: url(/images/pricelistbcg-1280.png);
+    background-image: url(../images/pricelistbcg-1280.png);
     @include viewport($range: retina) {
-      background-image: url(/images/pricelistbcg-1280x2.png);
+      background-image: url(../images/pricelistbcg-1280x2.png);
     }
   }
 }
