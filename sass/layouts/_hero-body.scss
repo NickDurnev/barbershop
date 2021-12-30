@@ -3,7 +3,7 @@
     padding: 0;
     // margin-left: auto;
     // margin-right: auto;
-    background-image: url(./images/herobcg-577.jpg);
+    background-image: url(../images/herobcg-577.jpg);
 
     background-color: rgba(25, 28, 38, 0.2);
     background-size: cover;
@@ -12,7 +12,7 @@
     width: 576px;
 
     @include viewport($range: retina) {
-      background-image: url(./images/herobcg-577x2.jpg);
+      background-image: url(../images/herobcg-577x2.jpg);
     }
   }
 
@@ -36,10 +36,10 @@
 @include viewport($range: desktop) {
   .hero-body {
     width: 1073px;
-    background-image: url(./images/herobcg-1073.jpg);
+    background-image: url(../images/herobcg-1073.jpg);
 
     @include viewport($range: retina) {
-      background-image: url(./images/herobcg-1073x2.jpg);
+      background-image: url(../images/herobcg-1073x2.jpg);
     }
   }
   .navigation-contacts__button {
